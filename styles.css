@@ -305,9 +305,14 @@ input[type="checkbox"]:checked::before {
 /* MAIN OUTPUT ITSELF */
 
 .main-output-itself {
+    font-family: var(--f-sora);
     padding: 15px;
     border-bottom: var(--border-c);
     border-right: var(--border-c);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-decoration: none;
 }
 
 /* MAIN OUTPUT ITSELF IMAGE */
@@ -427,6 +432,35 @@ input[type="checkbox"]:checked::before {
     width: var(--thickness);
     height: var(--large);
     background-color: white;
+}
+
+/* MAIN OUTPUT ITSELF INFORMATION */
+
+.main-output-itself-information {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN OUTPUT ITSELF INFORMATION HEADER */
+
+.main-output-itself-information-header {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: space-between;
+}
+
+.main-output-itself-information-header-itself {
+    color: white;
+    font-weight: 500;
+}
+
+.main-output-itself-information-header-level {
+    color: rgb(200, 200, 200);
+    border: 1px solid rgba(35,38,39);
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 /* MAIN OUTPUT ITSELF STATES */
