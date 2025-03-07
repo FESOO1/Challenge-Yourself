@@ -40,7 +40,7 @@ function filteringTheData(challengesData) {
         };
     });
 
-    console.log(filteredObject, filterId);
+    const filteredChallenge = challengesData.filter(challengeData => filterId.includes(challengeData.id));
 };
 
 for (let i = 0; i < filterInput.length; i++) {
