@@ -181,6 +181,7 @@ main {
     width: 17px;
     height: 17px;
     fill: white;
+    transition: transform 300ms;
 }
 
 .main-filter-itself:hover {
@@ -189,6 +190,14 @@ main {
 
 .main-filter-itself:active {
     background-color: var(--bg-active-color);
+}
+
+.main-filter-itself-active {
+    background-color: var(--bg-active-color);
+}
+
+.main-filter-itself-active .main-filter-itself-svg {
+    transform: rotateZ(180deg);
 }
 
 /* MAIN FILTER DROP DOWN */
@@ -202,6 +211,14 @@ main {
     border: 1px solid rgba(35,38,39);
     border-right: 0;
     border-bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms;
+}
+
+.main-filter-drop-down-active {
+    opacity: 1;
+    pointer-events: unset;
 }
 
 /* MAIN FILTER DROP DOWN INPUT */
