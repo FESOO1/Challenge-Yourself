@@ -17,6 +17,10 @@
 
 body {
     background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* MAIN */
@@ -24,6 +28,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
 }
 
 /* 
@@ -307,6 +312,7 @@ input[type="checkbox"]:checked::before {
     font-family: var(--f-sora);
     padding: 15px;
     border-right: var(--border-c);
+    border-bottom: var(--border-c);
     display: flex;
     flex-direction: column;
     row-gap: 15px;
