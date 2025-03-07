@@ -2,7 +2,7 @@ const outputContainer = document.querySelector('.main-output');
 
 // FILTER
 const filterInput = document.querySelectorAll('.main-filter-drop-down-input-itself');
-let filter = ['HTML', 'CSS', 'JavaScript'];
+let filter = [];
 let filterId = [];
 
 // RETRIEVING THE DATA
@@ -30,6 +30,7 @@ retrievingTheData();
 
 function filteringTheData(challengesData) {
     const filteredObject = challengesData.filter(challengeData => {
+        // LANGUAGES
         const languages = challengeData.languages;
         for (const language of languages) {
             if (filter.includes(language)) {
@@ -38,9 +39,19 @@ function filteringTheData(challengesData) {
                 };
             };
         };
+        // LEVEL
+        if (filter.includes(challengeData.level)) {
+            if (!filterId.includes(challengeData.id)) {
+                filterId.push(challengeData.id);
+            };
+        };
     });
 
     const filteredChallenge = challengesData.filter(challengeData => filterId.includes(challengeData.id));
+
+    const beingFiltered = filter.length > 0 ? filteredChallenge : challengesData;
+
+    displayTheChallenges(beingFiltered);
 };
 
 for (let i = 0; i < filterInput.length; i++) {
@@ -51,12 +62,20 @@ for (let i = 0; i < filterInput.length; i++) {
             const beingUncheckedInput = filter.indexOf(filterInput[i].value);
             filter.splice(beingUncheckedInput, 1);
         };
+
+        // UPDATING THE CONTENT
+        retrievingTheData();
+
+        // EMPTYING THE FILTER ID
+        filterId = [];
     });
 };
 
 // DISPLAY THE CHALLENGES
 
 function displayTheChallenges(challengesData) {
+    outputContainer.innerHTML = '';
+
     for (const challengeData of challengesData) {
         // OUTPUT ITSELF
         const outputItself = document.createElement('a');

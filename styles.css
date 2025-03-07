@@ -338,7 +338,7 @@ input[type="checkbox"]:checked::before {
 
 .main-output-itself-image {
     width: 100%;
-    background-color: red;
+    background-color: var(--bg-color);
     line-height: 0;
     position: relative;
 }
