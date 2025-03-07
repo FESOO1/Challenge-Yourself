@@ -12,7 +12,7 @@ async function retrievingTheData() {
 
         const data = await response.json();
 
-        
+        console.log(data[0].thumbnail);
     }
     catch(error) {
         console.error(error);

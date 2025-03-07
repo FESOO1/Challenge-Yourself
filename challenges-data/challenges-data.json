@@ -15,7 +15,26 @@
             "platformLink": "https://github.com/FESOO1/Guess-The-Word-By-Its-Definition"
         },
         "liveLink": "https://guess-the-word-eight.vercel.app/",
-        "thumbnail": "",
-        "showcasePhotos": []
+        "thumbnail": "../assets/challenge-images/guessTheGame1.png",
+        "showcasePhotos": ["../assets/challenge-images/guessTheGame1.png","../assets/challenge-images/guessTheGame2.png","../assets/challenge-images/guessTheGame3.png"]
+    },
+    {
+        "id": 2,
+        "name": "Dear Diary",
+        "level": "Intermediate",
+        "description": "Dear Diary is a private and minimalistic online journal where you can write and store your thoughts securely. Capture your daily experiences, emotions, and memories in a simple, distraction-free interface.",
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "technologies": [],
+        "features": {
+            "featuresName": ["Secure & Private", "Easy to Use", "Organized Entries", "Accessible Anywhere"],
+            "featuresContext": ["Your entries are stored safely for personal use.", "Clean and minimal design for a smooth writing experience.", "Keep track of your thoughts with neatly arranged logs.", "Write and review your diary from any device."]
+        },
+        "sourceCode": {
+            "platformName": "GitHub",
+            "platformLink": "https://github.com/FESOO1/Guess-The-Word-By-Its-Definition"
+        },
+        "liveLink": "https://guess-the-word-eight.vercel.app/",
+        "thumbnail": "../assets/challenge-images/guessTheGame1.png",
+        "showcasePhotos": ["../assets/challenge-images/guessTheGame1.png","../assets/challenge-images/guessTheGame2.png","../assets/challenge-images/guessTheGame3.png"]
     }
 ]
