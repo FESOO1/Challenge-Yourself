@@ -39,10 +39,21 @@ function filteringTheData(challengesData) {
                 };
             };
         };
+
         // LEVEL
         if (filter.includes(challengeData.level)) {
             if (!filterId.includes(challengeData.id)) {
                 filterId.push(challengeData.id);
+            };
+        };
+
+        // TECHNOLOGIES
+        const technologies = challengeData.technologies;
+        for (const technology of technologies) {
+            if (filter.includes(technology)) {
+                if (!filterId.includes(challengeData.id)) {
+                    filterId.push(challengeData.id);
+                };
             };
         };
     });
