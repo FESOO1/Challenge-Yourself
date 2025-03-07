@@ -1,14 +1,21 @@
 [
     {
-        "challengeId": 1,
-        "challengeName": "Guess The Word",
-        "challengeLevel": "Intermediate",
-        "challengeDescription": "This is a simple and fun word-guessing game where players try to figure out the hidden word based on given hints. Test your vocabulary and thinking skills in this engaging challenge!",
+        "id": 1,
+        "name": "Guess The Word",
+        "level": "Intermediate",
+        "description": "This is a simple and fun word-guessing game where players try to figure out the hidden word based on given hints. Test your vocabulary and thinking skills in this engaging challenge!",
         "languages": ["HTML", "CSS", "JavaScript"],
         "technologies": ["API"],
         "features": {
             "featuresName": ["Hint-Based Gameplay", "Simple & Interactive", "Responsive Design", "Endless Challenges"],
             "featuresContext": ["Use provided hints to guess the correct word.", "Easy-to-use interface for a smooth experience.", "Play on any device, from desktop to mobile.", "Enjoy a variety of words to keep the game exciting."]
-        }
+        },
+        "sourceCode": {
+            "platformName": "GitHub",
+            "platformLink": "https://github.com/FESOO1/Guess-The-Word-By-Its-Definition"
+        },
+        "liveLink": "https://guess-the-word-eight.vercel.app/",
+        "thumbnail": "",
+        "showcasePhotos": []
     }
 ]
