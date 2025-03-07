@@ -2,7 +2,7 @@ const outputContainer = document.querySelector('.main-output');
 
 // FILTER
 const filterInput = document.querySelectorAll('.main-filter-drop-down-input-itself');
-let filter = [];
+let filter = ['HTML', 'CSS', 'JavaScript'];
 let filterId = [];
 
 // RETRIEVING THE DATA
@@ -17,7 +17,7 @@ async function retrievingTheData() {
 
         const data = await response.json();
 
-        displayTheChallenges(data);
+        filteringTheData(data);
     }
     catch(error) {
         console.error(error);
@@ -27,6 +27,21 @@ async function retrievingTheData() {
 retrievingTheData();
 
 // FILTERING THE DATA
+
+function filteringTheData(challengesData) {
+    const filteredObject = challengesData.filter(challengeData => {
+        const languages = challengeData.languages;
+        for (const language of languages) {
+            if (filter.includes(language)) {
+                if (!filterId.includes(challengeData.id)) {
+                    filterId.push(challengeData.id);
+                };
+            };
+        };
+    });
+
+    console.log(filteredObject, filterId);
+};
 
 for (let i = 0; i < filterInput.length; i++) {
     filterInput[i].addEventListener('click', () => {
@@ -133,8 +148,6 @@ function displayTheChallenges(challengesData) {
         // OUTPUT ITSELF INFORMATION - APPENDING
         outputItselfInformation.appendChild(outputItselfInformationHeader);
         outputItselfInformation.appendChild(outputItselfInformationMore);
-
-        console.log(challengeData);
 
         // OUTPUT ITSELF - APPENDING
         outputItself.appendChild(outputItselfImage);
