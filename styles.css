@@ -311,7 +311,7 @@ input[type="checkbox"]:checked::before {
     border-right: var(--border-c);
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 15px;
     text-decoration: none;
 }
 
@@ -439,7 +439,7 @@ input[type="checkbox"]:checked::before {
 .main-output-itself-information {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
 }
 
 /* MAIN OUTPUT ITSELF INFORMATION HEADER */
@@ -462,6 +462,19 @@ input[type="checkbox"]:checked::before {
     padding: 8px 10px;
     font-size: 0.8rem;
     font-weight: 300;
+}
+
+/* MAIN OUTPUT ITSELF INFORMATION MORE */
+
+.main-output-itself-information-more {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+.main-output-itself-information-more-paragraph {
+    color: rgb(200, 200, 200);
+    line-height: 1.5;
 }
 
 /* MAIN OUTPUT ITSELF STATES */
