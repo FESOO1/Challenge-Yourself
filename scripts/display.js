@@ -1,5 +1,10 @@
 const outputContainer = document.querySelector('.main-output');
 
+// FILTER
+const filterInput = document.querySelectorAll('.main-filter-drop-down-input-itself');
+let filter = [];
+let filterId = [];
+
 // RETRIEVING THE DATA
 
 async function retrievingTheData() {
@@ -20,6 +25,19 @@ async function retrievingTheData() {
 };
 
 retrievingTheData();
+
+// FILTERING THE DATA
+
+for (let i = 0; i < filterInput.length; i++) {
+    filterInput[i].addEventListener('click', () => {
+        if (filterInput[i].checked === true) {
+            filter.push(filterInput[i].value);
+        } else {
+            const beingUncheckedInput = filter.indexOf(filterInput[i].value);
+            filter.splice(beingUncheckedInput, 1);
+        };
+    });
+};
 
 // DISPLAY THE CHALLENGES
 

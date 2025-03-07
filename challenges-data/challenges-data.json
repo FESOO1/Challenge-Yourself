@@ -21,7 +21,7 @@
     {
         "id": 2,
         "name": "Dear Diary",
-        "level": "Beginner",
+        "level": "Intermediate",
         "description": "Dear Diary is a private and minimalistic online journal where you can write and store your thoughts securely. Capture your daily experiences, emotions, and memories in a simple, distraction-free interface.",
         "languages": ["HTML", "CSS", "JavaScript"],
         "technologies": [],
@@ -59,7 +59,7 @@
     {
         "id": 4,
         "name": "Portfolio",
-        "level": "Intermediate",
+        "level": "Beginner",
         "description": "Portfolio is a clean and professional portfolio showcasing the work of frontend developer Ilhomjon Yusupov. It highlights projects, skills, and experience in web development with a minimal and user-friendly design.",
         "languages": ["HTML", "CSS", "JavaScript"],
         "technologies": [],
