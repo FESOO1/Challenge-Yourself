@@ -24,7 +24,6 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
 }
 
 /* 
@@ -307,7 +306,6 @@ input[type="checkbox"]:checked::before {
 .main-output-itself {
     font-family: var(--f-sora);
     padding: 15px;
-    border-bottom: var(--border-c);
     border-right: var(--border-c);
     display: flex;
     flex-direction: column;
@@ -501,4 +499,52 @@ input[type="checkbox"]:checked::before {
 
 .main-output-itself:hover::before {
     opacity: 1;
+}
+
+/* FOOTER */
+
+footer {
+    height: 70px;
+    border-top: var(--border-c);
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.footer-link {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--f-sora);
+}
+
+.footer-link-text-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-link-text-itself {
+    color: rgb(200, 200, 200);
+    font-weight: 500;
+    transition: transform 300ms;
+}
+
+.footer-link-text-itself:last-of-type {
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(30px);
+    transition: transform 300ms;
+}
+
+.footer-link:hover .footer-link-text-itself {
+    transform: translateY(-50px);
+}
+
+.footer-link:hover .footer-link-text-itself:last-of-type {
+    transform: translateY(0);
 }
