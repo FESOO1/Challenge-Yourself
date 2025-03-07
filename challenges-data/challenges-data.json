@@ -33,7 +33,7 @@
             "platformName": "GitHub",
             "platformLink": "https://github.com/FESOO1/Guess-The-Word-By-Its-Definition"
         },
-        "liveLink": "https://guess-the-word-eight.vercel.app/",
+        "liveLink": "https://github.com/FESOO1/DD-Dear-Diary",
         "thumbnail": "../assets/challenge-images/guessTheGame1.png",
         "showcasePhotos": ["../assets/challenge-images/guessTheGame1.png","../assets/challenge-images/guessTheGame2.png","../assets/challenge-images/guessTheGame3.png"]
     }
