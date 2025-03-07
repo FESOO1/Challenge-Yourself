@@ -93,6 +93,8 @@ function displayTheChallenges(challengesData) {
         outputItself.href = './pages/challenge-showcase.html';
         outputItself.classList.add('main-output-itself');
 
+        outputItself.addEventListener('mouseenter', () => localStorage.setItem('challendID', challengeData.id));
+
         // OUTPUT ITSELF IMAGE
         const outputItselfImage = document.createElement('div');
         outputItselfImage.classList.add('main-output-itself-image');
