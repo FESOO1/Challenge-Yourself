@@ -21,7 +21,7 @@
     {
         "id": 2,
         "name": "Dear Diary",
-        "level": "Intermediate",
+        "level": "Beginner",
         "description": "Dear Diary is a private and minimalistic online journal where you can write and store your thoughts securely. Capture your daily experiences, emotions, and memories in a simple, distraction-free interface.",
         "languages": ["HTML", "CSS", "JavaScript"],
         "technologies": [],
@@ -36,5 +36,43 @@
         "liveLink": "https://dd-dear-diary.vercel.app/",
         "thumbnail": "../assets/challenge-images/dearDiary1.png",
         "showcasePhotos": ["../assets/challenge-images/dearDiary1.png", "../assets/challenge-images/dearDiary2.png", "../assets/challenge-images/dearDiary3.png", "../assets/challenge-images/dearDiary4.png", "../assets/challenge-images/dearDiary5.png"]
+    },
+    {
+        "id": 3,
+        "name": "Flip Match",
+        "level": "Advanced",
+        "description": "Flip Match is a fun and interactive memory card game where players flip cards to find matching pairs. Test your concentration and memory skills in an engaging and simple gameplay experience.",
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "technologies": [],
+        "features": {
+            "featuresName": ["Memory Challenge", "Smooth Animations", "Multiple Difficulty Levels", "Responsive Design", "Replayable Fun"],
+            "featuresContext": ["Sharpen your brain by matching card pairs.", "Enjoy a visually appealing and interactive experience.", "Choose from different levels for added challenge.", "Play seamlessly on desktop and mobile devices.", "Restart anytime to improve your score and memory skills."]
+        },
+        "sourceCode": {
+            "platformName": "GitHub",
+            "platformLink": "https://github.com/FESOO1/Flip-Match"
+        },
+        "liveLink": "https://flip-match.vercel.app/",
+        "thumbnail": "../assets/challenge-images/flipMatch1.png",
+        "showcasePhotos": ["../assets/challenge-images/flipMatch1.png", "../assets/challenge-images/flipMatch2.png", "../assets/challenge-images/flipMatch3.png", "../assets/challenge-images/flipMatch4.png"]
+    },
+    {
+        "id": 4,
+        "name": "Portfolio",
+        "level": "Intermediate",
+        "description": "Portfolio is a clean and professional portfolio showcasing the work of frontend developer Ilhomjon Yusupov. It highlights projects, skills, and experience in web development with a minimal and user-friendly design.",
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "technologies": [],
+        "features": {
+            "featuresName": ["Project Showcase", "Clean & Minimal Design", "Responsive & Fast", "Contact Section", "Skills & Experience"],
+            "featuresContext": ["Display of past and current web development projects.", "Simple yet effective layout for easy navigation.", "Optimized for smooth performance on all devices.", "Easy way for clients to reach out for collaborations.", "Overview of expertise in frontend technologies."]
+        },
+        "sourceCode": {
+            "platformName": "GitHub",
+            "platformLink": "https://github.com/FESOO1/FES001-PORTFOLIO"
+        },
+        "liveLink": "https://fes001portfolio.vercel.app/",
+        "thumbnail": "../assets/challenge-images/porfolio1.png",
+        "showcasePhotos": ["../assets/challenge-images/porfolio1.png", "../assets/challenge-images/porfolio1.png"]
     }
 ]

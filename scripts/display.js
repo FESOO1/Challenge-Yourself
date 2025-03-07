@@ -97,7 +97,6 @@ function displayTheChallenges(challengesData) {
             const outputItselfInformationMoreParagraphTechnologies = document.createElement('p');
             outputItselfInformationMoreParagraphTechnologies.classList.add('main-output-itself-information-more-paragraph');
             outputItselfInformationMoreParagraphTechnologies.textContent = 'Technologies: ';
-
             const technologies = challengeData.technologies;
             for (const technology of technologies) {
                 if (technology === technologies[technologies.length - 1]) {
@@ -106,7 +105,6 @@ function displayTheChallenges(challengesData) {
                     outputItselfInformationMoreParagraphTechnologies.textContent += ` ${technology},`;
                 };
             };
-
             outputItselfInformationMore.appendChild(outputItselfInformationMoreParagraphTechnologies);
         };
 
