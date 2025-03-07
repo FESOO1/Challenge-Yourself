@@ -121,7 +121,6 @@ main {
 .main-search-input-button {
     background-color: transparent;
     border: 0;
-    outline: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
