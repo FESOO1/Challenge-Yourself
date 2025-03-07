@@ -13,7 +13,7 @@
             <h1 class="main-header-itself">Improve Your Frontend Skills</h1>
         </div>
         <div class="main-search-filter">
-            <div class="main-search">
+            <form class="main-search">
                 <label for="searchInput" class="main-search-input-container">
                     <svg class="main-search-input-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
                         <path d="M14 14L16.5 16.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
@@ -21,13 +21,13 @@
                         <path d="M16 9C16 5.13401 12.866 2 9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16C12.866 16 16 12.866 16 9Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
                     </svg>
                     <input type="text" placeholder="Search for a challenge..." class="main-search-input-itself" id="searchInput">
-                    <button title="Clear the input" type="button" class="main-search-input-button">
+                    <button title="Clear the input" type="button" class="main-search-input-button" id="searchButton">
                         <svg class="main-search-input-button-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
                             <path d="M19.0005 4.99988L5.00049 18.9999M5.00049 4.99988L19.0005 18.9999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
                 </label>
-            </div>
+            </form>
             <div class="main-filter">
                 <button type="button" class="main-filter-itself">
                     <h3 class="main-filter-itself-text">FILTER</h3>
@@ -82,5 +82,7 @@
     </main>
     
     <script src="./script.js"></script>
+    <script src="./scripts/filter-toggle.js"></script>
+    <script src="./scripts/search-features.js"></script>
 </body>
 </html>

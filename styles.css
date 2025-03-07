@@ -123,15 +123,18 @@ main {
     border: 0;
     outline: none;
     cursor: pointer;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
     padding: 10px;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .main-search-input-button-shown {
-    display: flex;
+    opacity: 1;
+    pointer-events: unset;
 }
 
 .main-search-input-button-svg {
