@@ -313,6 +313,20 @@ input[type="checkbox"]:checked::before {
     flex-direction: column;
     row-gap: 15px;
     text-decoration: none;
+    position: relative;
+}
+
+.main-output-itself::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(32, 32, 34), transparent);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 300ms;
 }
 
 /* MAIN OUTPUT ITSELF IMAGE */
@@ -475,6 +489,7 @@ input[type="checkbox"]:checked::before {
 .main-output-itself-information-more-paragraph {
     color: rgb(200, 200, 200);
     line-height: 1.5;
+    font-weight: 300;
 }
 
 /* MAIN OUTPUT ITSELF STATES */
@@ -482,4 +497,8 @@ input[type="checkbox"]:checked::before {
 .main-output-itself:hover .main-output-itself-image-borders {
     --position: 10px;
     --opacity: 1;
+}
+
+.main-output-itself:hover::before {
+    opacity: 1;
 }
