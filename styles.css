@@ -328,6 +328,8 @@ input[type="checkbox"]:checked::before {
 .main-output-itself-image-borders {
     --large: 18px;
     --thickness: 1px;
+    --position: 0;
+    --opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -339,11 +341,13 @@ input[type="checkbox"]:checked::before {
 
 .main-output-itself-image-border-top-left {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: var(--position);
+    left: var(--position);
     background-color: white;
     width: var(--large);
     height: var(--thickness);
+    opacity: var(--opacity);
+    transition: top 300ms, left 300ms, opacity 300ms;
 }
 
 .main-output-itself-image-border-top-left::before {
@@ -360,11 +364,13 @@ input[type="checkbox"]:checked::before {
 
 .main-output-itself-image-border-top-right {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: var(--position);
+    right: var(--position);
     background-color: white;
     width: var(--large);
     height: var(--thickness);
+    opacity: var(--opacity);
+    transition: top 300ms, right 300ms, opacity 300ms;
 }
 
 .main-output-itself-image-border-top-right::before {
@@ -381,11 +387,13 @@ input[type="checkbox"]:checked::before {
 
 .main-output-itself-image-border-bottom-left {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: var(--position);
+    left: var(--position);
     background-color: white;
     width: var(--large);
     height: var(--thickness);
+    opacity: var(--opacity);
+    transition: bottom 300ms, left 300ms, opacity 300ms;
 }
 
 .main-output-itself-image-border-bottom-left::before {
@@ -402,11 +410,13 @@ input[type="checkbox"]:checked::before {
 
 .main-output-itself-image-border-bottom-right {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: var(--position);
+    right: var(--position);
     background-color: white;
     width: var(--large);
     height: var(--thickness);
+    opacity: var(--opacity);
+    transition: bottom 300ms, right 300ms, opacity 300ms;
 }
 
 .main-output-itself-image-border-bottom-right::before {
@@ -417,4 +427,11 @@ input[type="checkbox"]:checked::before {
     width: var(--thickness);
     height: var(--large);
     background-color: white;
+}
+
+/* MAIN OUTPUT ITSELF STATES */
+
+.main-output-itself:hover .main-output-itself-image-borders {
+    --position: 10px;
+    --opacity: 1;
 }
