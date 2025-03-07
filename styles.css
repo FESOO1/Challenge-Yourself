@@ -76,6 +76,7 @@ main {
     font-size: 3rem;
     text-transform: uppercase;
     font-family: var(--f-source-code-pro);
+    font-weight: 600;
 }
 
 /*
