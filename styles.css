@@ -290,3 +290,37 @@ input[type="checkbox"]:checked::before {
 .main-filter-drop-down-input:active {
     background-color: var(--bg-active-color);
 }
+
+/*
+
+    MAIN OUTPUT
+
+*/
+
+.main-output {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+/* MAIN OUTPUT ITSELF */
+
+.main-output-itself {
+    padding: 25px;
+    border-bottom: var(--border-c);
+    border-right: var(--border-c);
+}
+
+/* MAIN OUTPUT ITSELF IMAGE */
+
+.main-output-itself-image {
+    width: 100%;
+    background-color: red;
+    line-height: 0;
+}
+
+.main-output-itself-image-itself {
+    width: 100%;
+}
+
+/* MAIN OUTPUT ITSELF STATES */
+
