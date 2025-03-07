@@ -510,6 +510,8 @@ footer {
     grid-template-columns: 1fr auto;
 }
 
+/* FOOTER LINK */
+
 .footer-link {
     width: 100%;
     text-decoration: none;
@@ -541,10 +543,22 @@ footer {
     transition: transform 300ms;
 }
 
+/* FOOTER LINK HOVER */
+
+.footer-link:hover {
+    background-color: var(--bg-hover-color);
+}
+
 .footer-link:hover .footer-link-text-itself {
     transform: translateY(-50px);
 }
 
 .footer-link:hover .footer-link-text-itself:last-of-type {
     transform: translateY(0);
+}
+
+/* FOOTER LINKS */
+
+.footer-links {
+    display: flex;
 }
