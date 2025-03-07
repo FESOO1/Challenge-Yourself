@@ -439,6 +439,7 @@ input[type="checkbox"]:checked::before {
 .main-output-itself-information {
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
 }
 
 /* MAIN OUTPUT ITSELF INFORMATION HEADER */
