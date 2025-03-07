@@ -1,0 +1,1 @@
+const outputContainer = document.querySelector('.main-output');
