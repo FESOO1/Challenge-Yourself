@@ -24,6 +24,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
 }
 
 /* 
@@ -207,11 +208,10 @@ main {
 .main-filter-drop-down {
     position: absolute;
     top: 100%;
-    left: -1px;
+    left: 0;
     width: 100%;
     background-color: var(--bg-color);
     border: 1px solid rgba(35,38,39);
-    border-right: 0;
     border-bottom: 0;
     opacity: 0;
     pointer-events: none;
