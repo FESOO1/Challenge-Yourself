@@ -31,10 +31,10 @@
         },
         "sourceCode": {
             "platformName": "GitHub",
-            "platformLink": "https://github.com/FESOO1/Guess-The-Word-By-Its-Definition"
+            "platformLink": "https://github.com/FESOO1/DD-Dear-Diary"
         },
-        "liveLink": "https://github.com/FESOO1/DD-Dear-Diary",
-        "thumbnail": "../assets/challenge-images/guessTheGame1.png",
-        "showcasePhotos": ["../assets/challenge-images/guessTheGame1.png","../assets/challenge-images/guessTheGame2.png","../assets/challenge-images/guessTheGame3.png"]
+        "liveLink": "https://dd-dear-diary.vercel.app/",
+        "thumbnail": "../assets/challenge-images/dearDiary1.png",
+        "showcasePhotos": ["../assets/challenge-images/dearDiary1.png", "../assets/challenge-images/dearDiary2.png", "../assets/challenge-images/dearDiary3.png", "../assets/challenge-images/dearDiary4.png", "../assets/challenge-images/dearDiary5.png"]
     }
 ]
