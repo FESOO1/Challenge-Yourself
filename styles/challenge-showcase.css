@@ -155,6 +155,7 @@ main {
 
 .main-itself-challenge-information-left-inner-ul-item {
     font-weight: 300;
+    line-height: 1.7;
 }
 
 .main-itself-challenge-information-left-inner-ul-item span {
@@ -214,4 +215,59 @@ main {
 
 .main-itself-challenge-information-right-itself-inner-link:hover {
     background-color: var(--bg-hover-color);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+    .main-itself-challenge-name {
+        padding: 40px 80px;
+    }
+    .main-itself-challenge-name-itself {
+        font-size: 2.5rem;
+    }
+    .main-itself-challenge-information-right {
+        width: 370px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-itself-challenge-information {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-itself-challenge-information-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        height: 60px;
+    }
+    .header-go-back-button {
+        width: 60px;
+    }
+    .main-itself {
+        padding-top: 60px;
+    }
+    .main-itself-challenge-information-left {
+        padding: 20px;
+    }
+    .main-itself-challenge-name {
+        padding: 30px 70px;
+    }
+    .main-itself-challenge-name-itself {
+        font-size: 2rem;
+    }
+    .main-itself-challenge-information-right-itself-inner,
+    .main-itself-challenge-information-right-itself-inner-link {
+        height: 55px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-itself-challenge-name {
+        padding: 20px 30px;
+    }
 }
