@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --f-source-code-pro: "Source Code Pro", monospace;
+    --f-sora: "Sora", sans-serif;
+    --border-c: 1px solid rgba(35,38,39);
+    --bg-color: rgb(20, 20, 22);
+    --bg-hover-color: rgb(32, 32, 34);
+    --bg-active-color: rgb(28, 28, 30);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
