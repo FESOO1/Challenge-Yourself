@@ -15,4 +15,5 @@ searchInput.addEventListener('input', e => {
 searchCharacterRemoveButton.addEventListener('click', () => {
     searchInput.value = '';
     searchCharacterRemoveButton.classList.remove('main-search-input-button-shown');
+    retrievingTheData();
 });

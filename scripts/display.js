@@ -62,7 +62,18 @@ function filteringTheData(challengesData) {
 
     const beingFiltered = filter.length > 0 ? filteredChallenge : challengesData;
 
-    displayTheChallenges(beingFiltered);
+    const inputOutput = beingFiltered.filter(challengeData => {
+        const inputValue = searchInput.value.toLowerCase();
+        const challengeDataName = challengeData.name.toLowerCase();
+
+        if (challengeDataName.startsWith(inputValue)) {
+            return challengeData;
+        };
+    });
+
+    const filteredChallengesData = searchInput.value.length > 0 ? inputOutput : beingFiltered;
+
+    displayTheChallenges(filteredChallengesData);
 };
 
 for (let i = 0; i < filterInput.length; i++) {
@@ -190,3 +201,6 @@ function displayTheChallenges(challengesData) {
         outputContainer.appendChild(outputItself);
     };
 };
+
+// INITIALIZING BUTTONS
+searchInput.addEventListener('input', retrievingTheData);
