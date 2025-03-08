@@ -4,6 +4,7 @@ main {
     display: flex;
     flex-direction: column;
     font-family: var(--f-sora);
+    padding-bottom: 80px;
 }
 
 /*
@@ -13,12 +14,18 @@ main {
 */
 
 .header {
+    position: fixed;
+    width: 100%;
     height: 80px;
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     column-gap: 30px;
     border-bottom: var(--border-c);
+    background-color: rgba(20, 20, 22, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 999;
 }
 
 /* HEADER GO BACK BUTTON */
@@ -60,6 +67,7 @@ main {
 */
 
 .main-itself {
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
 }
@@ -162,4 +170,30 @@ main {
 
 .main-itself-challenge-information-right {
     width: 440px;
+}
+
+.main-itself-challenge-information-right-itself {
+    position: sticky;
+    top: 80px;
+    left: 0;
+}
+
+.main-itself-challenge-information-right-itself-inner {
+    height: 70px;
+    border-bottom: var(--border-c);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    column-gap: 20px;
+}
+
+.main-itself-challenge-information-right-itself-inner-text:first-of-type {
+    color: rgb(136, 138, 139);
+    font-weight: 400;
+}
+
+.main-itself-challenge-information-right-itself-inner-text:last-of-type {
+    color: white;
+    font-weight: 600;
 }
