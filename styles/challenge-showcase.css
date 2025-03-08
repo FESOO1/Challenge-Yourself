@@ -187,6 +187,10 @@ main {
     column-gap: 20px;
 }
 
+.main-itself-challenge-information-right-itself-inner-hidden {
+    display: none;
+}
+
 .main-itself-challenge-information-right-itself-inner-text:first-of-type {
     color: rgb(136, 138, 139);
     font-weight: 400;

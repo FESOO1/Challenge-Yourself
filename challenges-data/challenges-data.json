@@ -72,7 +72,7 @@
             "platformLink": "https://github.com/FESOO1/FES001-PORTFOLIO"
         },
         "liveLink": "https://fes001portfolio.vercel.app/",
-        "thumbnail": "../assets/challenge-images/porfolio1.png",
-        "showcasePhotos": ["../assets/challenge-images/porfolio1.png", "../assets/challenge-images/porfolio2.png", "../assets/challenge-images/porfolio3.png", "../assets/challenge-images/porfolio4.png"]
+        "thumbnail": "../assets/challenge-images/portfolio1.png",
+        "showcasePhotos": ["../assets/challenge-images/portfolio1.png", "../assets/challenge-images/portfolio2.png", "../assets/challenge-images/portfolio3.png", "../assets/challenge-images/portfolio4.png"]
     }
 ]

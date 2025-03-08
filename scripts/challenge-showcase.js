@@ -4,7 +4,10 @@ const mainChallengeNameContainer = document.querySelector('.main-itself-challeng
 const descriptionText = document.querySelector('#descriptionText');
 const featuresContainer = document.querySelector('.main-itself-challenge-information-left-inner-ul');
 const visualsContainer = document.querySelector('#visualsContainer');
-
+const difficultyText = document.querySelector('#difficultyText');
+const languagesText = document.querySelector('#languagesText');
+const technologiesTextContainer = document.querySelector('#technologiesTextContainer');
+const technologiesText = document.querySelector('#technologiesText');
 const livePreviewAnchor = document.querySelector('#livePreviewAnchor');
 const sourceCodeAnchor = document.querySelector('#sourceCodeAnchor');
 
@@ -70,4 +73,35 @@ function displayTheOpenedChallenge(challengesData) {
 
         visualsContainer.appendChild(visualItself);
     };
+
+    // DIFFICULTY
+    difficultyText.textContent = challengeData[0].level;
+
+    // LANGUAGES
+    const languages = challengeData[0].languages;
+    for (const language of languages) {
+        if (language === languages[languages.length - 1]) {
+            languagesText.textContent += ` ${language}`;
+        } else {
+            languagesText.textContent += ` ${language},`;
+        };
+    };
+
+    // TECHNOLOGY
+    const technologies = challengeData[0].technologies;
+    if (technologies.length > 0) {
+        for (const technology of technologies) {
+            if (technology === technologies[technologies.length - 1]) {
+                technologiesText.textContent += ` ${technology}`;
+            } else {
+                technologiesText.textContent += ` ${technology},`;
+            };
+        };
+    } else {
+        technologiesTextContainer.classList.add('main-itself-challenge-information-right-itself-inner-hidden');
+    };
+
+    // LIVE PREVIEW AND SOURCE CODE
+    sourceCodeAnchor.href = challengeData[0].sourceCode.platformLink;
+    livePreviewAnchor.href = challengeData[0].liveLink;
 };
