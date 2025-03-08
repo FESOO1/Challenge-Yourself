@@ -5,6 +5,9 @@ const descriptionText = document.querySelector('#descriptionText');
 const featuresContainer = document.querySelector('.main-itself-challenge-information-left-inner-ul');
 const visualsContainer = document.querySelector('#visualsContainer');
 
+const livePreviewAnchor = document.querySelector('#livePreviewAnchor');
+const sourceCodeAnchor = document.querySelector('#sourceCodeAnchor');
+
 // RETRIEVING THE DATA
 
 async function retrievingTheData() {
