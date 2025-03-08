@@ -3,6 +3,7 @@
 main {
     display: flex;
     flex-direction: column;
+    font-family: var(--f-sora);
 }
 
 /*
@@ -48,7 +49,64 @@ main {
 }
 
 .header-challenge-name {
-    font-family: var(--f-sora);
     color: rgb(136, 138, 139);
     font-weight: 400;
+}
+
+/* 
+
+    MAIN ITSELF
+
+*/
+
+.main-itself {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN ITSELF CHALLENGE NAME */
+
+.main-itself-challenge-name {
+    padding: 60px 80px;
+    border-bottom: var(--border-c);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-itself-challenge-name::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 22, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.main-itself-challenge-name::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/challenge-images/guessTheGame1.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: -1;
+    animation: 40s infinite challenge-bg-image-animation;
+}
+
+.main-itself-challenge-name-itself {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+@keyframes challenge-bg-image-animation {
+    0%{background-position: top;}
+    50%{background-position: bottom;}
+    100%{background-position: top;}
 }
