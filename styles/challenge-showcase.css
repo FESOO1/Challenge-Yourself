@@ -1,0 +1,54 @@
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+
+    HEADER
+
+*/
+
+.header {
+    height: 80px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 30px;
+    border-bottom: var(--border-c);
+}
+
+/* HEADER GO BACK BUTTON */
+
+.header-go-back-button {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: var(--border-c);
+    transition: background-color 200ms;
+}
+
+.header-go-back-button-svg {
+    fill: rgb(136, 138, 139);
+    width: 18px;
+    height: 18px;
+    transition: fill 200ms;
+}
+
+.header-go-back-button:hover {
+    background-color: var(--bg-hover-color);
+}
+
+.header-go-back-button:hover .header-go-back-button-svg {
+    fill: white;
+}
+
+.header-challenge-name {
+    font-family: var(--f-sora);
+    color: rgb(136, 138, 139);
+    font-weight: 400;
+}
