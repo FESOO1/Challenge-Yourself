@@ -105,7 +105,7 @@ function displayTheChallenges(challengesData) {
         outputItself.classList.add('main-output-itself');
 
         // SAVING THE ID INTO LOCAL STORAGE
-        outputItself.addEventListener('click', () => localStorage.setItem('challendID', challengeData.id));
+        outputItself.addEventListener('click', () => localStorage.setItem('challengeID', challengeData.id));
 
         // OUTPUT ITSELF IMAGE
         const outputItselfImage = document.createElement('div');
