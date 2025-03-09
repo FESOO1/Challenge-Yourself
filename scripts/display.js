@@ -66,7 +66,7 @@ function filteringTheData(challengesData) {
         const inputValue = searchInput.value.toLowerCase();
         const challengeDataName = challengeData.name.toLowerCase();
 
-        if (challengeDataName.startsWith(inputValue)) {
+        if (challengeDataName.includes(inputValue)) {
             return challengeData;
         };
     });
