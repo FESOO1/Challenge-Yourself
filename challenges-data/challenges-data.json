@@ -74,5 +74,24 @@
         "liveLink": "https://fes001portfolio.vercel.app/",
         "thumbnail": "../assets/challenge-images/portfolio1.png",
         "showcasePhotos": ["../assets/challenge-images/portfolio1.png", "../assets/challenge-images/portfolio2.png", "../assets/challenge-images/portfolio3.png", "../assets/challenge-images/portfolio4.png"]
+    },
+    {
+        "id": 5,
+        "name": "Macbook Replica",
+        "level": "Intermediate",
+        "description": "MacBook Replica is a web-based simulation of a MacBook interface, featuring interactive apps and a sleek UI. Experience a near-authentic MacBook feel directly in your browser.",
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "technologies": [],
+        "features": {
+            "featuresName": ["Realistic MacBook UI", "Interactive Apps", "Smooth Animations", "Customizable Experience", "Responsive Design"],
+            "featuresContext": ["A visually accurate MacBook-like experience.", "Includes Photos, Notes, Photo Booth, Folder, Safari, and Settings.", "Seamless transitions and effects for a polished feel.", "Adjust settings and explore different features.", "Works across various screen sizes and devices."]
+        },
+        "sourceCode": {
+            "platformName": "GitHub",
+            "platformLink": "https://github.com/FESOO1/Macbook"
+        },
+        "liveLink": "https://macbook-bice.vercel.app/",
+        "thumbnail": "../assets/challenge-images/macbook1.png",
+        "showcasePhotos": ["../assets/challenge-images/macbook1.png", "../assets/challenge-images/macbook2.png", "../assets/challenge-images/macbook3.png", "../assets/challenge-images/macbook4.png"]
     }
 ]
