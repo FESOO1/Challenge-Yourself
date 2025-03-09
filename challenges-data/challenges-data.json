@@ -112,5 +112,24 @@
         "liveLink": "https://recall-hazel.vercel.app/",
         "thumbnail": "../assets/challenge-images/recall1.png",
         "showcasePhotos": ["../assets/challenge-images/recall1.png", "../assets/challenge-images/recall2.png", "../assets/challenge-images/recall3.png"]
+    },
+    {
+        "id": 7,
+        "name": "Photographer Portfolio",
+        "level": "Beginner",
+        "description": "James Harrison is a sleek and professional portfolio showcasing photography and videography services. Explore high-quality visuals, browse through past projects, and easily get in touch for bookings.",
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "technologies": [],
+        "features": {
+            "featuresName": ["Gallery Showcase", "Minimal & Elegant Design", "Responsive & Fast", "Easy Navigation", "Contact Section"],
+            "featuresContext": ["View a collection of high-quality photos and videos.", "A clean and visually appealing layout.", "Optimized for smooth performance on all devices.", "Seamless browsing experience with a user-friendly interface.", "Simple way to reach out for photography and videography inquiries."]
+        },
+        "sourceCode": {
+            "platformName": "GitHub",
+            "platformLink": "https://github.com/FESOO1/FESODI_PHOTO-STUDIO"
+        },
+        "liveLink": "https://fesodi-photo-studio.vercel.app/",
+        "thumbnail": "../assets/challenge-images/photographyPortfolio1.png",
+        "showcasePhotos": ["../assets/challenge-images/photographyPortfolio1.png", "../assets/challenge-images/photographyPortfolio2.png", "../assets/challenge-images/photographyPortfolio3.png", "../assets/challenge-images/photographyPortfolio4.png"]
     }
 ]
