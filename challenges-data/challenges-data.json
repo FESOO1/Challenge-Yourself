@@ -93,5 +93,24 @@
         "liveLink": "https://macbook-bice.vercel.app/",
         "thumbnail": "../assets/challenge-images/macbook1.png",
         "showcasePhotos": ["../assets/challenge-images/macbook1.png", "../assets/challenge-images/macbook2.png", "../assets/challenge-images/macbook3.png", "../assets/challenge-images/macbook4.png"]
+    },
+    {
+        "id": 6,
+        "name": "Recall Easily",
+        "level": "Beginner",
+        "description": "Recall is a flashcard-based memory game where you create topics and add custom flashcards. Test your recall ability by guessing the content of each flashcard before flipping it to check your answer. It’s a fun and interactive way to reinforce learning and improve memory.",
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "technologies": [],
+        "features": {
+            "featuresName": ["Custom Topics", "Interactive Flashcards", "Personalized Learning", "Simple & Intuitive UI", "Responsive Design"],
+            "featuresContext": ["Create and organize flashcards under different topics.", "Guess the answer before flipping to reveal it.", "Add and manage your own flashcards for any subject.", "Clean and easy-to-use design for a smooth experience.", "Works on both desktop and mobile devices."]
+        },
+        "sourceCode": {
+            "platformName": "GitHub",
+            "platformLink": "https://github.com/FESOO1/recall"
+        },
+        "liveLink": "https://recall-hazel.vercel.app/",
+        "thumbnail": "../assets/challenge-images/recall1.png",
+        "showcasePhotos": ["../assets/challenge-images/recall1.png", "../assets/challenge-images/recall2.png", "../assets/challenge-images/recall3.png"]
     }
 ]
